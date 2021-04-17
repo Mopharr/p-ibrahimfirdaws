@@ -239,7 +239,7 @@ section .title::after {
 /*  ABOUT SECTION STYLING   ===========*/
 
 .about .title::after {
-    content: "Who is Ife Sarumi";
+    content: "Who is Firdaws Oyebisi";
 }
 
 
@@ -333,17 +333,22 @@ section .title::after {
     transition: all .3s ease;
 }
 
-.services .serv__content .card:hover .box {
-    transform: scale(1.05);
+.card p{
+    margin-bottom: 50px;
 }
-
-.services .serv__content .card:hover {
-    background: #c71585;
+.card-btn{
+    margin-bottom: 10px;
 }
-
-.services .serv__content .card:hover i {
+.card-btn:hover{
+    font-size: 30px;
+    transition: all 0.5s ease;
+}
+.card a{
     color: #fff;
-    transition: all .3s ease;
+    background: rgba(119,40,90, 0.5);
+    border: 2px solid #c71585;
+    padding: 10px;
+    margin-bottom: 10px;
 }
 
 /*     QUALIFICATIONS  SECTION STYLING   ===========*/
