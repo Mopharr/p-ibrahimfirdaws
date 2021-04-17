@@ -1,0 +1,617 @@
+/*  BASIC SETUP   ===========*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html {
+    background-color: #fff;
+    color: #555;
+    font-family: 'comfortaa';
+    font-size: 20px;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+}
+
+/*  REUSABLE COMPONENTS  ===========*/
+
+.row {
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 100px 0;
+    transition: all .3s ease;
+}
+
+section .title {
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+
+}
+
+section .title::before {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: #111;
+    transform: translateX(-50%);
+}
+
+section .title::after {
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    font-size: 30%;
+    color: #c71585;
+    padding: 5px;
+    background: #fff;
+    transform: translateX(-50%);
+}
+
+.about .about-content,
+.services .serv__content,
+.projects .serv__content,
+.contact .contact__content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*  HEADINGs   ===========*/
+
+/*  PARAGRAPHS  ===========*/
+
+/*  ICONS  ===========*/
+
+/*  LINKS  ===========*/
+
+/*  BUTTONS   ===========*/
+
+.home .home-content a {
+    display: inline-block;
+    background-color: #451e5d;
+    color: #fff;
+    font-size: 90%;
+    padding: 12px 36px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid #451e5d;
+    transition: all 0.3s ease;
+}
+
+.home .home-content a:hover {
+    color: #fff;
+    background: none;
+}
+
+/*  HEADER   ===========*/
+
+.bd-container {
+    max-width: 1140px;
+    width: calc(100% - 2rem);
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.bd-grid {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.l-header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 888;
+    background-color: transparent;
+}
+
+
+
+/*  Main nav  ===========*/
+
+.nav {
+    height: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__item {
+    margin-bottom: 1.5rem;
+}
+
+.nav__link {
+    color: #fff;
+    transition: .3s;
+}
+
+.nav__link:hover {
+    color: #451e5d;
+}
+
+.nav__logo, .nav__toggle {
+    color: #fff;
+}
+
+.nav__logo {
+    font-size: 30px;
+}
+
+.nav__toggle {
+    display: flex;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.pr {
+    color: #451e5d;
+}
+
+/* background header */
+.scroll-header {
+    background-color: #77285A;
+    box-shadow: 0 2px 4px rgba(0,0,0, .1);
+}
+
+.scroll-header .nav__logo, .scroll-header .nav__toggle, .scroll-header .nav__link {
+    color: #ffffff;
+}
+
+.scroll-header .nav__menu {
+    background-color: #77285a;
+}
+
+/*  ACTIVE MENU   ===========*/
+
+.active-link {
+    position: relative;
+}
+
+.active-link::after {
+    content: '';
+    position: absolute;
+    bottom: -.5rem;
+    left: 0;
+    width: 65%;
+    height: 3px;
+    background-color: #451e5d;
+}
+
+
+/*  HOME SECTION  ===========*/
+.home {
+    display: flex;
+    background: url("https://i.ibb.co/wRHXcPN/bg.png") no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    color: #fff;
+    min-height: 500px;
+    
+}
+
+.home .row {
+    margin: auto 0 auto 40px;
+}
+
+.home .home-content .text-1 {
+    font-size: 220%; 
+    font-weight: 600;
+    margin-left: -3px;  
+}
+
+.home .home-content .text-2 {
+    font-size: 120%;
+    margin: 5px 0;
+}
+
+.home .home-content .text-3 {
+    font-size: 120%;   
+    margin: 5px 0;
+}
+
+.home .home-content .text-4 {
+    font-size: 120%;   
+}
+
+.home .home-content .text-4 span{
+    color: #c71585;
+    font-weight: 500;   
+}
+
+
+/*  ABOUT SECTION STYLING   ===========*/
+
+.about .title::after {
+    content: "Who is Ife Sarumi";
+}
+
+
+
+.about .about-content .left {
+    width: 45%;
+}
+
+.about .about-content .left img {
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.about .about-content .right {
+    width: 55%;
+}
+
+.about .about-content .right .text {
+    font-size: 90%;
+    font-weight: 550;
+    margin-bottom: 10px;
+}
+
+.about .about-content .right .text span {
+    color: #c71585;
+}
+
+.about .about-content .right p {
+    text-align: justify;
+ 
+}
+
+.about .about-content .right a {
+    display: inline-block;
+    background-color: #451e5d;
+    color: #fff;
+    font-size: 80%;
+    font-weight: 500;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid #451e5d;
+    transition: all 0.3s ease;
+}
+
+.about .about-content .right a:hover {
+    color: #c71585;
+    background: none;
+}
+
+
+/*  SERVICES SECTION STYLING   ===========*/
+
+.services .title::after {
+    content: "What she provides";
+    background: #9452a5;
+}
+
+.services .title::before {
+    background: #fff;
+}
+
+.services {
+    background: #9452a5;
+    color: #fff;
+}
+
+.services .serv__content .card {
+    width: calc(33% - 20px);
+    background: #222;
+    text-align: center;
+    border-radius: 6px;
+    padding: 20px 25px;
+    cursor: pointer;
+}
+
+.services .serv__content .card i {
+    font-size: 50px;
+    color: #c71585;
+}
+
+.services .serv__content .card .text {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+
+.services .serv__content .card .box {
+    transition: all .3s ease;
+}
+
+.services .serv__content .card:hover .box {
+    transform: scale(1.05);
+}
+
+.services .serv__content .card:hover {
+    background: #c71585;
+}
+
+.services .serv__content .card:hover i {
+    color: #fff;
+    transition: all .3s ease;
+}
+
+/*     QUALIFICATIONS  SECTION STYLING   ===========*/
+
+.qual .title::after{
+    content: "Her Experience";
+}
+
+.qual .qual-content .column {
+    width: calc(50% - 30px);
+    align-content: center;
+}
+
+.qual .qual-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.qual .qual-content .left .text {
+    font-size: 120%;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.qual .qual-content .left a {
+    display: inline-block;
+    background-color: #451e5d;
+    color: #fff;
+    font-size: 60%;
+    font-weight: 500;
+    padding: 8px 16px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid #451e5d;
+    transition: all 0.3s ease;
+}
+
+.qual .qual-content .left a:hover {
+    color: #c71585;
+    background: none;
+}
+
+.qual .qual-content .right .bars {
+    margin-bottom: 15px;
+}
+
+.qual .qual-content .right .info {
+    display: flex;
+    margin-bottom: 5px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.qual .qual-content .right span {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.qual .qual-content .right .line {
+    height: 5px;
+    width: 100%;
+    background: lightslategray;
+    position: relative;
+}
+
+.qual .qual-content .right .line::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0%;
+    background: #c71585;
+}
+
+/*     PROJECTS  SECTION STYLING   ===========*/
+
+.projects .title::after {
+    content: "Her works";
+    background: #dfa8e4;
+}
+
+.projects {
+    background: #dfa8e4;
+    color: #fff;
+}
+
+.projects .carousel .card {
+    background: #222;
+    border-radius: 6px;
+    padding: 25px 35px ;
+}
+
+.projects .serv__content .card {
+    width: calc(33% - 20px);
+    background: #222;
+    text-align: center;
+    border-radius: 6px;
+    padding: 20px 25px;
+    cursor: pointer;
+}
+
+.projects .serv__content .card i {
+    font-size: 50px;
+    color: #c71585;
+}
+
+.projects .serv__content .card .text {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+
+.projects .serv__content .card .box {
+    transition: all .3s ease;
+}
+
+.projects .serv__content .card .box img {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 16px;
+    border: 5px solid #c71585;
+}
+
+.projects .serv__content .card:hover .box {
+    transform: scale(1.05);
+}
+
+.projects .serv__content .card:hover {
+    background: #72286f;
+}
+
+.projects .serv__content .card:hover i {
+    color: #fff;
+    transition: all .3s ease;
+}
+
+/*     CONTACT  SECTION STYLING   ===========*/
+
+.contact .title::after {
+    content: "Reach her";
+}
+
+.contact .contact__content .column {
+    width: calc(50% - 30px);
+}
+
+.contact .contact__content .text {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.contact .contact__content .left p {
+    text-align: justify;
+}
+
+.contact .contact__content .left .icons {
+    margin: 10px 0;
+}
+
+.contact .contact__content .row {
+    display: flex;
+    height: 65px;
+    align-items: center;
+}
+
+.contact .contact__content .row .info {
+    margin-left: 30px;
+}
+
+.contact .contact__content .row i {
+    font-size: 25px;
+    color: #c71585;
+}
+
+.contact .contact__content .info .head {
+    font-weight: 500;
+}
+
+.contact .contact__content .sub-title {
+    color: rgb(27, 27, 27);
+}
+
+.contact .right form .fields {
+    display: flex;
+}
+
+.contact .right form .field,
+.contact .right form .fields .field {
+    height: 45px;
+    width: 100%;
+}
+.contact .right form .textarea {
+    height: 80px;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.contact .right form .name {
+    margin-right: 10px;
+    margin-bottom: 15px;
+}
+
+.contact .right form .email {
+    margin-left: 10px;
+}
+
+.contact .right form .field input,
+.contact .right form .textarea textarea {
+    height: 100%;
+    width: 100%;
+    border: 1px solid lightgray;
+    border-radius: 6px;
+    outline: none;
+    padding: 0 15px;
+    font-size: 70%;
+}
+
+.contact .right form .textarea textarea {
+    padding-top: 10px;
+    resize: none;
+}
+
+.contact .right form .button {
+    height: 47px;
+    width: 170px;
+}
+
+.contact .right form .button button {
+    width: 100%;
+    height: 100%;
+    border: 2px solid #451e5d;
+    background: #451e5d;
+    color: #fff;
+    font-size: 80%;
+    font-weight: 500;
+    margin-top: 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.contact .right form .button button:hover {
+    color: #c71585;
+    background: none;
+}
+
+/*     FOOTER  SECTION STYLING   ===========*/
+
+footer {
+    background: #3f3f3f;
+    padding: 20px 23px;
+    color: #fff;
+    align-items: center;
+}
+
+footer span a {
+    color: #c71585;
+}
+
+footer span {
+    font-size: 60%;
+}
+
+footer span a:hover {
+    text-decoration: underline;
+}
